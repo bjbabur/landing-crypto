@@ -1,0 +1,842 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:is(ul, ol) li {
+  list-style: none;
+}
+
+:is(*) a {
+  text-decoration: none;
+}
+
+:is(html, body) {
+  font-size: 10px;
+  background-color: var(--secondary-dark);
+}
+
+:root {
+  --light: #fff;
+  --secondary-light: #fff6fb;
+  --dark: #000;
+  --secondary-dark: #1b004e;
+  --tertiary-dark: #171717;
+  --primary: #eb5757;
+  --soft-pink: #fff6fb;
+  --grey: #4f4f4f;
+  --dark-grey: #616161;
+  --light-grey: #e6e6e6;
+  --secondary-grey: #bcbcbc;
+  --tertiary-grey: #828282;
+}
+
+
+.btn {
+  display: inline-flex;
+  padding: 1.5rem 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  border-radius: 50px;
+  border: 2px solid var(--primary);
+  color: var(--light);
+  text-align: center;
+  font-size: 1.7em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  transition: all 0.2s ease;
+}
+
+.btn-outline {
+  width: 160px;
+  height: 47px;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+}
+
+.btn-filled {
+  width: 200px;
+  height: 47px;
+  background-color: var(--primary);
+}
+
+.btn-filled:hover {
+  background-color: transparent;
+}
+
+
+.header .navbar {
+  width: 80%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.header .navbar .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header .navbar .logo .logo-name {
+  color: var(--light);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.header .navbar .menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.header .navbar .menu-list li a {
+  color: var(--light);
+  font-size: 1.7em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.header .navbar .menu {
+  display: none;
+}
+
+
+.header {
+  width: 100%;
+  height: 700px;
+  background-color: var(--secondary-dark);
+  background: url("../../assets/cryptous/bg-header.png");
+  display: flex;
+  flex-direction: column;
+}
+
+.header .header-container {
+  width: 80%;
+  height: 620px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.header .header-container .header-head {
+  width: 50%;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.header .header-container .header-head .header-head-title {
+  width: 665px;
+  color: var(--light);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.header .header-container .header-head .header-head-text {
+  width: 500px;
+  color: var(--light);
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+
+
+.prices {
+  width: 100%;
+  height: 900px;
+  background-color: var(--secondary-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prices .prices-title {
+  /* width: 510.651px; */
+  color: var(--light);
+  font-size: 3.2em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.prices .prices-body table tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  border-bottom: 1px solid var(--secondary-grey);
+}
+
+.prices .prices-body table thead th {
+  color: var(--light);
+  text-align: center;
+  font-size: 1.4em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: capitalize;
+  margin-top: 2.5rem;
+  margin-bottom: 4.6rem;
+}
+
+.prices .prices-body table tr td {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--light);
+  text-align: center;
+  font-size: 1.4em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  margin-top: 2.5rem;
+  margin-bottom: 4.6rem;
+}
+
+.prices .prices-body table tr td span {
+  color: var(--tertiary-grey);
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11px;
+}
+.prices .prices-body table tr td:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.platform {
+  width: 100%;
+  height: 575.4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: var(--soft-pink);
+}
+
+.platform .platform-head .platform-head-title {
+  width: 698px;
+  color: var(--tertiary-dark);
+  font-size: 3.2em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 6rem auto;
+}
+
+.platform .platform-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 14em;
+}
+
+.platform .platform-body .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.platform .platform-body .card .card-title {
+  color: var(--dark);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
+  margin: 4.5rem 0 2.9rem 0;
+}
+
+.platform .platform-body .card .card-text {
+  color: var(--dark);
+  text-align: center;
+  font-size: 1.7em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  margin-bottom: 3rem;
+}
+
+
+.download {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-dark);
+}
+
+.download .download-head {
+  width: 60%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.download .download-head .download-head-title {
+  width: 450px;
+  color: var(--light);
+  font-size: 3.2em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.download .download-head .download-head-text {
+  width: 500px;
+  color: var(--light);
+  font-size: 1.7em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.download .download-head .download-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.download .download-body {
+  width: 40%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10px auto;
+}
+
+.download .download-body img:first-child {
+  position: absolute;
+  z-index: 5;
+  transform: rotate(-8.445deg);
+  right: 50%;
+  top: 50%;
+  transform: translate(-110%, -50%);
+}
+
+.download .download-body img:last-child {
+  position: absolute;
+  transform: rotate(11.318deg);
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.thrive {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: var(--soft-pink);
+}
+
+.thrive .thrive-head .thrive-head-title {
+  width: 246px;
+  color: var(--dark);
+  font-size: 3.2em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 4.6rem;
+}
+
+.thrive .thrive-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+}
+
+.thrive .thrive-body .card {
+  width: 368px;
+  height: 413px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--light);
+  box-shadow: 0px 4px 8px 0px rgba(203, 203, 203, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.thrive .thrive-body .card .card-title {
+  width: 330px;
+  color: var(--dark);
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 24.5px 19px 13px 19px;
+}
+
+.thrive .thrive-body .card .card-text {
+  width: 330px;
+  color: var(--grey);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.42px;
+  margin: 13px 19px 28.6px 19px;
+}
+
+.thrive .thrive-body .card .acts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 31px;
+}
+
+.thrive .thrive-body .card .acts > p {
+  color: var(--dark-grey);
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.36px;
+}
+
+
+.subscribe {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-dark);
+  gap: 14px;
+}
+
+.subscribe .subscribe-title {
+
+  color: var(--light);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.subscribe .subscribe-text {
+
+  color: var(--light);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.subscribe .email {
+  width: 578px;
+  height: 74px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 37px;
+  border: 2px solid var(--light);
+  margin: 50px;
+}
+
+.subscribe .email input {
+  background-color: transparent;
+  border: none;
+  color: var(--light);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 28px 21px;
+}
+
+.subscribe .email p {
+  width: 139px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 31px;
+  background: var(--primary);
+  color: var(--light);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 5px;
+}
+
+
+.footer {
+  width: 100%;
+  height: 540px;
+  flex-shrink: 0;
+  background: linear-gradient(227deg, #4e0062 0.43%, #220076 99.56%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer-head {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .footer-head .sections .section-title {
+  color: var(--light);
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+
+.footer .footer-head .sections .section-text {
+ 
+  color: var(--light-grey);
+  opacity: 0.8;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.5%;
+  margin-bottom: 20px;
+}
+
+.footer .footer-body::before {
+  content: "";
+  width: 90%;
+  height: 1px;
+  background: var(--secondary-grey);
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: -30%;
+  transform: translate(-50%);
+}
+
+.footer .footer-body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  margin-top: 60px;
+  gap: 800px;
+}
+
+.footer .footer-body p {
+  color: var(--secondary-grey);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer .footer-body .social img {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1080px) {
+  :is(html, body) {
+    font-size: 8px;
+  }
+
+  
+
+  .header {
+    height: 400px;
+    background: #1b004e;
+  }
+
+  .header .navbar .logo .logo-name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .header .navbar .menu-list li a,
+  .header .navbar .btn-outline {
+    display: none;
+  }
+  .header .navbar .menu {
+    display: flex;
+  }
+
+  .header .header-container,
+  .header .header-container .header-head {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header .header-container .header-head .header-head-title {
+    width: 344px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 13px;
+  }
+
+  .header .header-container .header-head .header-head-text {
+    width: 344px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .header .header-container .header-body {
+    display: none;
+  }
+
+  /* ===========PRICES============= */
+
+  .prices .prices-title h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .prices .prices-body table tr td:nth-child(1),
+  .prices .prices-body table tr td:nth-child(3),
+  .prices .prices-body table tr td:nth-child(4),
+  .prices .prices-body table tr td:nth-child(5),
+  .prices .prices-body table tr td:nth-child(6),
+  .prices .prices-body table tr td:nth-child(8) {
+    display: none;
+  }
+
+  .prices .prices-body table tr th:nth-child(1),
+  .prices .prices-body table tr th:nth-child(3),
+  .prices .prices-body table tr th:nth-child(4),
+  .prices .prices-body table tr th:nth-child(5),
+  .prices .prices-body table tr th:nth-child(6),
+  .prices .prices-body table tr th:nth-child(8) {
+    display: none;
+  }
+
+  .platform {
+    height: 1000px;
+  }
+
+  .platform .platform-head .platform-head-title {
+    width: 344px;
+    text-align: center;
+    font-size: 20px;
+    width: 344px;
+    margin: 4rem auto;
+  }
+
+  .platform .platform-body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+  }
+
+  .platform .platform-body .card {
+    align-items: center;
+  }
+  .platform .platform-body .card .card-title {
+    font-size: 18px;
+    line-height: 14px;
+  }
+
+  .platform .platform-body .card .card-text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+
+  .download {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .download .download-head .download-container .btn-download img {
+    width: 100px;
+    height: 35px;
+  }
+
+  .download .download-body img {
+    width: 98.331px;
+    height: 199.809px;
+  }
+  .download .download-body img:first-child {
+    position: absolute;
+    z-index: 5;
+    transform: rotate(-8.445deg);
+    left: 65%;
+    top: 50%;
+    transform: translate(-110%, -50%);
+  }
+  
+  .download .download-body img:last-child {
+    position: absolute;
+    transform: rotate(11.318deg);
+    left: 65%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .download .download-head .download-head-title {
+    width: 344px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .download .download-head .download-head-text {
+    width: 344px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+
+  .thrive {
+    height: 1470px;
+  }
+  .thrive .thrive-body .card .card-head img {
+    width: 343px;
+    height: 207px;
+  }
+  .thrive .thrive-body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .thrive .thrive-body .card {
+    width: 343px;
+    height: 412.826px;
+    flex-shrink: 0;
+  }
+
+
+  .subscribe {
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribe .subscribe-title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .subscribe .subscribe-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .subscribe .email {
+    width: 343px;
+    height: 48px;
+  }
+  .subscribe .email input {
+    font-size: 12px;
+    margin: 2rem;
+  }
+  .subscribe .email p {
+    width: 139px;
+    height: 40px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+
+
+  .footer {
+    height: 1183px;
+  }
+  .footer .footer-head {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .footer .footer-head .sections .section-title {
+    margin-bottom: 20px;
+  }
+
+  .footer .footer-head .sections .section-text {
+    font-size: 14px;
+    line-height: 10px;
+  }
+  .footer .footer-head .sections .section-text:last-child {
+    margin-bottom: 30px;
+  }
+  .footer .footer-body {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+  }
+}
